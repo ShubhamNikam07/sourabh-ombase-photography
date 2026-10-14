@@ -1,5 +1,9 @@
 import { useEffect, useState } from "react";
 import { ArrowDown, ArrowDownRight, ArrowUpRight, Camera, ChevronLeft, ChevronRight, Instagram, Menu, Play, X } from "lucide-react";
+import marriagePhoto from "../photo/marriage.jpg";
+import ownerPhoto from "../photo/owner 1.webp";
+import patlinPhoto from "../photo/patlin bai.webp";
+import processionVideo from "../photo/procession 1.mp4";
 
 type Photo = {
   src: string;
@@ -9,9 +13,9 @@ type Photo = {
 };
 
 const photos: Photo[] = [
-  { src: "/photo/marriage.jpg", title: "A day to remember", category: "Weddings", position: "center" },
-  { src: "/photo/patlin%20bai.webp", title: "A moment of tradition", category: "Celebrations", position: "center" },
-  { src: "/photo/owner%201.webp", title: "Behind the lens", category: "Details", position: "center" }
+  { src: marriagePhoto, title: "A day to remember", category: "Weddings", position: "center" },
+  { src: patlinPhoto, title: "A moment of tradition", category: "Celebrations", position: "center" },
+  { src: ownerPhoto, title: "Behind the lens", category: "Details", position: "center" }
 ];
 
 const filters = ["All stories", "Weddings", "Celebrations", "Details"] as const;
@@ -145,8 +149,8 @@ function App() {
           <p>Some moments are best remembered in motion. Take a little look inside the celebration.</p>
         </div>
         <div className="film-frame reveal">
-          <video controls playsInline preload="metadata" poster="/photo/marriage.jpg" aria-label="Wedding celebration film">
-            <source src="/photo/procession%201.mp4" type="video/mp4" />
+          <video controls playsInline preload="metadata" poster={marriagePhoto} aria-label="Wedding celebration film">
+            <source src={processionVideo} type="video/mp4" />
             Your browser does not support embedded video.
           </video>
           <span className="film-label"><Play size={14} fill="currentColor" /> A MOMENT IN MOTION</span>

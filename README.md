@@ -29,7 +29,7 @@ The GitHub Actions workflow builds and deploys the site from the `main` branch. 
 
 ## Important before presenting to the photographer
 
-- Portfolio media is served from the `photo` folder. Add approved JPG, PNG, or WebP photos there and update the gallery list in `src/App.tsx`.
+- Portfolio media is bundled from the `photo` folder by Vite. Add approved JPG, PNG, or WebP photos there and import them in `src/App.tsx` before adding them to the gallery list so they work in both local and GitHub Pages builds.
 - `lord gaensh.heic` is not included in the gallery because HEIC support varies across browsers. Convert it to JPG or WebP for consistent display.
 - The procession video is served locally from `photo/procession 1.mp4` and uses browser-native playback controls.
 - Confirm the business name, service descriptions, testimonials, contact details, social links, and packages with the photographer. The testimonial in this demo is explicitly a sample placeholder.
