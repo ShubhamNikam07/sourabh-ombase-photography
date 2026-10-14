@@ -11,6 +11,10 @@ A responsive, frontend-only wedding photography portfolio concept built with Rea
 5. Run `npm run dev`
 6. Open the local URL shown by Vite.
 
+## GitHub Pages deployment
+
+The GitHub Actions workflow builds and deploys the site from the `main` branch. In the repository settings, set **Pages → Build and deployment → Source** to **GitHub Actions**. The repository name is `sourabh-ombase-photography`, so its project page is served under `/sourabh-ombase-photography/`.
+
 ## Included
 
 - Cinematic landing section
